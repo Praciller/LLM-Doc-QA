@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "AI-powered document Q&A system with FastAPI backend and Streamlit frontend"
 readme = "README.md"
 requires-python = ">=3.9,!=3.9.7"
+package-mode = false
 license = {text = "MIT"}
 authors = [
     {name = "AI Document Q&A System", email = "example@example.com"},

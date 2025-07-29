@@ -89,6 +89,36 @@ A powerful AI-driven document question-answering and summarization system built 
 
    The web interface will be available at `http://127.0.0.1:8501`
 
+## 🌐 Streamlit Cloud Deployment
+
+This application can be deployed as a **standalone Streamlit app** on Streamlit Cloud without requiring a separate backend:
+
+### Quick Deploy
+
+1. **Fork this repository** to your GitHub account
+
+2. **Deploy on Streamlit Cloud:**
+
+   - Go to [share.streamlit.io](https://share.streamlit.io)
+   - Connect your GitHub account
+   - Select this repository
+   - Set the main file path to: `app.py`
+
+3. **Configure secrets:**
+
+   - In your Streamlit Cloud app settings, go to "Secrets"
+   - Add your Google API key:
+     ```toml
+     GOOGLE_API_KEY = "your-google-api-key-here"
+     ```
+
+4. **Deploy:** Your app will automatically deploy and be available at your Streamlit Cloud URL
+
+### Standalone vs Full Stack
+
+- **Standalone Mode (Recommended for Streamlit Cloud):** The `app.py` file contains a complete Streamlit application with integrated AI functionality
+- **Full Stack Mode (For local development):** Separate FastAPI backend (`backend/`) and Streamlit frontend (`frontend/`)
+
 ## API Endpoints
 
 ### POST /summarize
